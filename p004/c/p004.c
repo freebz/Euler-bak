@@ -9,7 +9,7 @@ int main() {
 
   int i, j, k, result = 0;
   for (i = 1; i < LIMIT; i++) {
-    for (j = 1; j < LIMIT; j++) {
+    for (j = i; j < LIMIT; j++) {
       k = i * j;
       if (isPalindrome(k)) {
 	if (result < k) {
