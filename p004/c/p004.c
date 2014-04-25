@@ -19,7 +19,7 @@ int main() {
     }
   }
 
-  printf("%d", result);
+  printf("%d\n", result);
   return 0;
 }
 

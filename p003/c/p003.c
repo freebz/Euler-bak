@@ -18,7 +18,7 @@ int main() {
     }
   }
 
-  printf("%d", i);
+  printf("%ld\n", i);
   return 0;
 }
 
