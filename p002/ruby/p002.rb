@@ -1,6 +1,5 @@
 #!/usr/bin/ruby
 
-INFINITY = 1.0/0
 MAX = 4000000
 
 
@@ -13,7 +12,7 @@ def fib(n)
 end
 
 
-p (1..INFINITY).lazy.map{ |n|
+p (1..Float::INFINITY).lazy.map{ |n|
   fib(n) 
 }.take_while{ |n|
   n < MAX
