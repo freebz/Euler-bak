@@ -44,7 +44,6 @@ int main(){
 	  sub[2] *= data[i+k][j+k];
 	  sub[3] *= data[i+k][j+UNIT-k];
 	}
-	
       }
 
       for (k = 0; k < 4; k++) {	
