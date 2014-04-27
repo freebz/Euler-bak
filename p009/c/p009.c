@@ -8,10 +8,9 @@ int main() {
   
   for (a = 1; a < LIMIT; a++) {
     for (b = a; b < LIMIT; b++) {
-      for (c = b; c < LIMIT; c++) {
-	if (a + b + c == 1000 && a * a + b * b == c * c) {
-	  goto out;
-	}
+      c = LIMIT - a - b;
+      if (a * a + b * b == c * c) {
+	goto out;
       }
     }
   }
