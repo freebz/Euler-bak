@@ -1,15 +1,14 @@
 #!/usr/bin/ruby
 
-LIMIT = 5
+LIMIT = 1001
 
-result, n = 1, 1
+result, n, step = 1, 1, 0
 
 (3..LIMIT).step(2) do |i|
-  n += (i - 2)
+  step += 2
   4.times do 
-    n += (i - 2) 
+    n += step
     result += n
-    p n
   end
 end
 
