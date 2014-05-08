@@ -9,5 +9,5 @@ File.open("data.txt") do |f|
     b.map.with_index do |item, i|
       item + (a[i] > a[i+1] ? a[i] : a[i+1])
     end
-  }
+  }.first
 end
